@@ -32,14 +32,17 @@ import platform
 import re
 import glob
 import hashlib
+import shutil
+import base64
 
 import cherrypy
 import subprocess
+import pybonjour
+import pgi
+pgi.install_as_gi()
 from gi.repository import Notify
 from gi.repository import GLib
-import pybonjour
-import shutil
-import base64
+
 
 app_name = 'linconnect-server'
 version = "2.20"
